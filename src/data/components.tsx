@@ -24,7 +24,7 @@ export default function useComponents() {
       link: `${baseLink}/checkbox/index.tsx`,
     },
     {
-      name: "Alrt Dialog",
+      name: "Alert Dialog",
       component: AlertDialogReact,
       link: `${baseLink}/alertDialog/index.tsx`,
     },
