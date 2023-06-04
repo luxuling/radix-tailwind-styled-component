@@ -23,14 +23,14 @@ export default function AccordionReact() {
         collapsible
         className="px-3 w-full bg-gray-50 rounded-md text-slate-950 focus-within:ring focus-within:ring-purple-500">
         {accordionItems.map((item, index) => (
-          <Accordion.Item value={`item-${index}`}>
+          <Accordion.Item key={index} value={`item-${index}`}>
             <Accordion.Header>
-              <Accordion.Trigger className="flex items-center justify-between w-full h-[45px] group radix-state-open:border-b">
+              <Accordion.Trigger className="flex text-sm md:text-base items-center justify-between w-full h-[45px] group radix-state-open:border-b">
                 {item.title}
                 <ChevronDownIcon className="transition-all duration-300 ease-in-out group-radix-state-open:rotate-180" />
               </Accordion.Trigger>
             </Accordion.Header>
-            <Accordion.Content className="overflow-hidden transform radix-state-open:animate-slideDown radix-state-closed:animate-slideUp">
+            <Accordion.Content className="overflow-hidden text-sm transform md:text-base radix-state-open:animate-slideDown radix-state-closed:animate-slideUp">
               <p className="p-3">{item.desc}</p>
             </Accordion.Content>
           </Accordion.Item>

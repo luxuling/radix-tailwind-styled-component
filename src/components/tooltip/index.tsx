@@ -8,7 +8,7 @@ export default function TooltipReact() {
           <Tooltip.Trigger>
             <button
               type="button"
-              className="px-3 py-2 rounded-md bg-slate-50 text-slate-900">
+              className="px-3 py-2 text-sm rounded-md bg-slate-50 text-slate-900 md:text-base">
               Hover me!
             </button>
           </Tooltip.Trigger>

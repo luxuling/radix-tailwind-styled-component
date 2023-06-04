@@ -11,18 +11,20 @@ export default function CheckBoxReact() {
   };
   return (
     <div className="flex flex-col justify-center items-center w-full">
-      <h1 className="mb-5 text-lg font-semibold text-center text-slate-50">
+      <h1 className="mb-5 text-sm font-semibold text-center md:text-base text-slate-50">
         Is checkbox checked? : {isCheck ? "checked" : "unchecked"}
       </h1>
       <div className="flex gap-3 items-center">
         <Checkbox.Root
-          className="rounded-md bg-slate-50 w-[24px] h-[24px] flex justify-center items-center"
+          className="rounded-sm bg-slate-50 w-[18px] h-[18px] md:w-[24px] md:h-[24px] flex justify-center items-center"
           onCheckedChange={checkChages}>
           <Checkbox.Indicator>
             <CheckIcon />
           </Checkbox.Indicator>
         </Checkbox.Root>
-        <span className="text-slate-50">Accept terms and conditions.</span>
+        <span className="text-sm text-slate-50 md:text-base">
+          Accept terms and conditions.
+        </span>
       </div>
     </div>
   );
