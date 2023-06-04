@@ -1,4 +1,5 @@
 import AccordionReact from "../components/accordion";
+import AlertDialogReact from "../components/alertDialog";
 import CheckBoxReact from "../components/checkbox";
 import TooltipReact from "../components/tooltip";
 
@@ -21,6 +22,11 @@ export default function useComponents() {
       name: "Checkbox",
       component: CheckBoxReact,
       link: `${baseLink}/checkbox/index.tsx`,
+    },
+    {
+      name: "Alrt Dialog",
+      component: AlertDialogReact,
+      link: `${baseLink}/alertDialog/index.tsx`,
     },
   ];
   return allComponents;
