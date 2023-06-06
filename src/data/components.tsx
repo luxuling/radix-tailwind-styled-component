@@ -1,6 +1,7 @@
 import AccordionReact from "../components/accordion";
 import AlertDialogReact from "../components/alertDialog";
 import CheckBoxReact from "../components/checkbox";
+import CollabsibleReact from "../components/collabsible";
 import TooltipReact from "../components/tooltip";
 
 export default function useComponents() {
@@ -27,6 +28,11 @@ export default function useComponents() {
       name: "Alert Dialog",
       component: AlertDialogReact,
       link: `${baseLink}/alertDialog/index.tsx`,
+    },
+    {
+      name: "Collabsible",
+      component: CollabsibleReact,
+      link: `${baseLink}/collabsible/index.tsx`,
     },
   ];
   return allComponents;
