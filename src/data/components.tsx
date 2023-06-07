@@ -2,6 +2,7 @@ import AccordionReact from "../components/accordion";
 import AlertDialogReact from "../components/alertDialog";
 import CheckBoxReact from "../components/checkbox";
 import CollabsibleReact from "../components/collabsible";
+import ContextMenuReact from "../components/contextMenu";
 import TooltipReact from "../components/tooltip";
 
 export default function useComponents() {
@@ -33,6 +34,11 @@ export default function useComponents() {
       name: "Collabsible",
       component: CollabsibleReact,
       link: `${baseLink}/collabsible/index.tsx`,
+    },
+    {
+      name: "Context Menu",
+      component: ContextMenuReact,
+      link: `${baseLink}/contextMenu/index.tsx`,
     },
   ];
   return allComponents;
