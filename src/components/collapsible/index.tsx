@@ -2,7 +2,7 @@ import * as Collaabible from "@radix-ui/react-collapsible";
 import { RowSpacingIcon, Cross2Icon } from "@radix-ui/react-icons";
 import { useState } from "react";
 
-export default function CollabsibleReact() {
+export default function CollapsibleReact() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Collaabible.Root
