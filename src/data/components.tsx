@@ -3,6 +3,7 @@ import AlertDialogReact from "../components/alertDialog";
 import CheckBoxReact from "../components/checkbox";
 import CollabsibleReact from "../components/collapsible";
 import ContextMenuReact from "../components/contextMenu";
+import ReactDialog from "../components/dialog";
 import TooltipReact from "../components/tooltip";
 
 export default function useComponents() {
@@ -39,6 +40,11 @@ export default function useComponents() {
       name: "Context Menu",
       component: ContextMenuReact,
       link: `${baseLink}/contextMenu/index.tsx`,
+    },
+    {
+      name: "Dialog",
+      component: ReactDialog,
+      link: `${baseLink}/dialog/index.tsx`,
     },
   ];
   return allComponents;
