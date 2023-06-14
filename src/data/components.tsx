@@ -4,6 +4,7 @@ import CheckBoxReact from "../components/checkbox";
 import CollabsibleReact from "../components/collapsible";
 import ContextMenuReact from "../components/contextMenu";
 import ReactDialog from "../components/dialog";
+import MenuBarReact from "../components/menuBar";
 import TooltipReact from "../components/tooltip";
 
 export default function useComponents() {
@@ -45,6 +46,11 @@ export default function useComponents() {
       name: "Dialog",
       component: ReactDialog,
       link: `${baseLink}/dialog/index.tsx`,
+    },
+    {
+      name: "Menubar",
+      component: MenuBarReact,
+      link: `${baseLink}/menuBar/index.tsx`,
     },
   ];
   return allComponents;
