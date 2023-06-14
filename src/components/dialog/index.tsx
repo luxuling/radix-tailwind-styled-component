@@ -21,7 +21,7 @@ export default function ReactDialog() {
               Name
             </label>
             <input
-              className="w-full px-3 py-2 mt-2 rounded-md outline-none md:w-[230px] ring ring-purple-500"
+              className="w-full px-3 py-2 mt-2 rounded-md outline-none focus:ring focus:ring-purple-500 md:w-[230px] border border-purple-500 bg-slate-50"
               id="name"
               defaultValue="Joko"
             />
@@ -31,7 +31,7 @@ export default function ReactDialog() {
               Username
             </label>
             <input
-              className="w-full px-3 py-2 mt-2 rounded-md outline-none ring ring-purple-500 md:w-[230px]"
+              className="w-full px-3 py-2 mt-2 rounded-md outline-none focus:ring focus:ring-purple-500 md:w-[230px] border border-purple-500 bg-slate-50"
               id="username"
               defaultValue="@jhonjoke"
             />
